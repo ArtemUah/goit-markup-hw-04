@@ -205,9 +205,12 @@ background-size: 1600px;
 }
 
 .advantages-svg {
+  margin-bottom: 30px;
+
   width: 270px;
   height: 120px;
   padding: 25px 102px;
+  background-color: #F5F4FA;;
 }
 
 .advantages-subtitle {
@@ -274,6 +277,11 @@ background-size: 1600px;
   width: calc((100 - 90px) / 4);
 }
 
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .team-list-text {
   padding: 30px 0;
 }
@@ -295,6 +303,7 @@ background-size: 1600px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 16px;
 }
 
 .team-icon-list {
@@ -357,6 +366,8 @@ fill: currentColor;
 }
 
 .clients-title {
+  margin-bottom: 50px;
+  
   font-weight: 700;
     font-size: 36px;
     line-height: calc(42/36);
