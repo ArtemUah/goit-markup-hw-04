@@ -191,6 +191,8 @@ ol {
   cursor: pointer;
   background: #2196f3;
   border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 /* -----------------Наші переваги-------------- */
@@ -204,18 +206,29 @@ ol {
   gap: 30px;
 }
 
-.advantages-svg {
-  margin-bottom: 30px;
+.advantages-icon-list{
+width: 270px;
+}
 
-  width: 270px;
+.advantages-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
-  padding: 25px 102px;
-  background-color: #f5f4fa;
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.advantages-svg {
+  width: 70px;
+height: 70px;
 }
 
 .advantages-subtitle {
-  margin-top: 5px;
   margin-bottom: 10px;
+  text-align: left;
+  width: 270px;
 
   font-weight: 700;
   font-size: 14px;
@@ -259,6 +272,8 @@ ol {
   text-align: center;
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: #F5F4FA;
+  background-size: 1600px;
 }
 
 .team-title {
@@ -281,10 +296,12 @@ ol {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background: #FFFFFF;
 }
 
 .team-list-text {
   padding: 30px 0;
+
 }
 
 .team-name {
@@ -309,51 +326,34 @@ ol {
 
 .team-icon-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
-  align-items: center;
-  justify-content: center;
 }
 
-.team-icon-item {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: transparent;
-  align-items: center;
-  justify-content: center;
-  color: #757575;
+.team-icon-link {
+display: flex;
+width: 44px;
+height: 44px;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+background-color: transparent;
+color: #757575;
 }
 
-.team-instagram {
+.team-icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
 
-.team-twitter {
-  width: 20px;
-  height: 16px;
-  fill: currentColor;
+.team-icon-link:hover,
+.team-icon-link:focus{
+  color:#ffffff;
+  background-color: #2196F3;
 }
 
-.team-facebook {
-  width: 20px;
-  height: 16px;
-  fill: currentColor;
-}
-
-.team-linkedin {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
-
-.team-icon-item:hover,
-.team-icon-item:focus {
-  background-color: var(--accent-color);
-  color: white;
-}
 
 /* -----------------Постійні клієнти-------------- */
 .clients {
@@ -380,28 +380,30 @@ ol {
   display: flex;
   max-width: 1200px;
   justify-content: space-between;
-  text-align: center;
   gap: 30px;
 }
 
-.clients-item {
-  color: #afb1b8;
+.clients-link {
+display: flex;
+color: #757575;
 }
 
-.clients-svg {
+.clients-svg{
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
   fill: currentColor;
+  border: 1px solid #AFB1B8;
+    border-radius: 4px;
 }
 
-.clients-svg:hover,
-.clients-svg:focus {
-  fill: var(--accent-color);
-  cursor: pointer;
-  border: 1px solid var(--accent-color);
+.clients-link:hover,
+.clients-link:focus{
+  color: #2196F3;
+  border: 1px solid #2196F3;
+  border-radius: 4px;
 }
+
+
 
 /* -----------------Footer-------------- */
 .footer {
@@ -486,6 +488,7 @@ ol {
 
 .footer-icon-item {
   background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
 }
 
 /* -----------------Портфоліо-------------- */
@@ -514,7 +517,8 @@ ol {
   letter-spacing: 0.03em;
   color: #212121;
   cursor: pointer;
-  background: transparent;
+  background: #F5F4FA;
+    border-radius: 4px;
   border: none;
 }
 .portfolio-btn:hover,
@@ -534,6 +538,10 @@ ol {
 
 .portfolio-item {
   border: none;
+}
+
+.portfolio-img {
+  display: block;
 }
 
 .portfolio-item:hover,
